@@ -3,7 +3,7 @@ void ascarr(int arr[], int n){
     for(int i=1;i<n;i++){
         int temp=arr[i],j=i-1;
         while(j>=0){
-            if(arr[j]>arr[i]){
+            if(arr[j]>temp){
                 arr[j+1]=arr[j];
                 j--;
             }
@@ -17,7 +17,7 @@ void desarr(int arr[], int n){
     for(int i=1;i<n;i++){
         int temp=arr[i],j=i-1;
         while(j>=0){
-            if(arr[j]<arr[i]){
+            if(arr[j]<temp){
                 arr[j+1]=arr[j];
                 j--;
             }

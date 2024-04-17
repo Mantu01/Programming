@@ -1,4 +1,4 @@
-// WAP to insert node at Kth position in singly linked list.
+// WAP to insert and delete node at Kth position in singly linked list.
 #include<iostream>
 using namespace std;
 class node{

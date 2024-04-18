@@ -1,4 +1,4 @@
-// WAP to merge two sorte linked list to obtain a sorted LL.
+// WAP to merge two sorted linked list to obtain a sorted LL.
 #include<iostream>
 using namespace std;
 class node{

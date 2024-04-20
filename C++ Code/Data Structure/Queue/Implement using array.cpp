@@ -50,11 +50,12 @@ int main(){
     }
     else
       q.pop();
-    cout<<endl<<"Front element : "<<q.front();
     if(q.isEmpty())
       cout<<endl<<"Queue is empty.";  
-    else
-      cout<<endl<<"Size of queue : "<<q.length()<<endl;
+    else{
+			cout<<endl<<"Front element : "<<q.front();
+			cout<<endl<<"Size of queue : "<<q.length()<<endl;
+		}
     cout<<endl<<"Enter 1 for push or 2 for pop or others for stoping operation : ";
     cin>>x;
   }

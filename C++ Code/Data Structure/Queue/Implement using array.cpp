@@ -1,4 +1,3 @@
-// WAP to implement queue using array.
 #include<iostream>
 using namespace std;
 class queue{
@@ -6,13 +5,13 @@ class queue{
     int start;
     int end;
     int* arr;
-    
+
   queue(){
     start=0;
     end=0;
     arr=new int[100];
   }
-  
+
   ~queue(){
     delete []arr;
   }
@@ -53,9 +52,9 @@ int main(){
     if(q.isEmpty())
       cout<<endl<<"Queue is empty.";  
     else{
-			cout<<endl<<"Front element : "<<q.front();
-			cout<<endl<<"Size of queue : "<<q.length()<<endl;
-		}
+      cout<<endl<<"Front element : "<<q.front();
+      cout<<endl<<"Size of queue : "<<q.length()<<endl;
+    }
     cout<<endl<<"Enter 1 for push or 2 for pop or others for stoping operation : ";
     cin>>x;
   }

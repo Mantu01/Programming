@@ -1,4 +1,4 @@
-// WAP to reverse the digits of a number given by user.
+// WAP to find the factorial of a number given by user.
 
 import java.util.*;
 

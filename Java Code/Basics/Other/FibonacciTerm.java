@@ -1,4 +1,4 @@
-// WAP to check whether a number given by user is pallindrome or not.
+// WAP to find the nth fibonacci term.
 
 import java.util.*;
 

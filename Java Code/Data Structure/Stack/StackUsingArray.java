@@ -66,12 +66,12 @@ public class StackUsingArray{
       return arr[top];
     }
     
-    int search(int key){
+    boolean search(int key){
       for(int i=0;i<=top;i++){
         if(arr[i]==key)
-          return i;
+          return true;
       }
-      return -1;
+      return false;
     }
     
     int size(){

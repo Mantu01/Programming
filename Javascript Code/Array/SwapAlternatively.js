@@ -7,6 +7,3 @@ function SwapElements(nums) {
     arr[i]=temp;
   }
 }
-let arr=[1,2,3,4,5,6];
-SwapElements(arr);
-console.log(arr);

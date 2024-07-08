@@ -30,6 +30,11 @@ class Queue{
       this.track=null;
     this.size--;
   }
+  front(){
+    if(this.head===null)
+      throw new Error("Queue is empty.");
+    return this.head.data;
+  }
   Size(){
     return this.size;
   }
@@ -37,3 +42,7 @@ class Queue{
     return this.head===null;
   }
 }
+let a=new Queue();
+a.push(2);
+a.push(5);
+console.log(a.front());

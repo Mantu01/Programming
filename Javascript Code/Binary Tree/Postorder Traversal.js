@@ -5,7 +5,7 @@
   -> The number of nodes in the tree is in the range [0, 100].
   -> -100 <= Node.val <= 100
 */
-var preorderTraversal = function(root) {
+var postorderTraversal = function(root) {
   let ans=[];
   solve(root,ans);
   return ans;

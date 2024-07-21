@@ -21,7 +21,7 @@ BSTIterator.prototype.push_left = function(node) {
   }
 }
 /**
- * @return {number}
+ * @return -{number}
  */
 BSTIterator.prototype.next = function() {
   let temp=this.st.pop();

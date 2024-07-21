@@ -31,7 +31,7 @@ BSTIterator.prototype.next = function() {
 };
 
 /**
- * @return {boolean}
+ * @return -{boolean}
  */
 BSTIterator.prototype.hasNext = function() {
   return this.st.length;

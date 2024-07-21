@@ -29,7 +29,6 @@ BSTIterator.prototype.next = function() {
     this.push_left(temp.right);
   return temp.val;
 };
-
 /**
  * @return -{boolean}
  */

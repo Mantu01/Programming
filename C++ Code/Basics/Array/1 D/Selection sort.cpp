@@ -1,6 +1,6 @@
 #include<iostream>
 void ascarr(int arr[], int n){
-    for(int i=1;i<n;i++){
+    for(int i=0;i<n;i++){
         for(int j=i+1;j<n;j++){
             if(arr[i]>arr[j] ){
                 int temp=arr[i];

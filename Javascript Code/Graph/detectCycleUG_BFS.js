@@ -13,7 +13,6 @@
 class Solution {
   isCycle(V, adj) {
     let visited=Array.from({length:V},()=>false);
-    let ans=false;
     function BFS(i){
       let q=[[i,-1]];
       visited[i]=true;

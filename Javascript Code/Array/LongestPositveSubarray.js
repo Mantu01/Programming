@@ -29,7 +29,7 @@ class Solution {
           }
       }
       
-      if(count>ans)   ans=count;      // This condition is needed if the last element ends with negative integer
+      if(count>ans)   ans=count;      // This condition is needed if the last element ends with positive integer
   
       
       return ans;

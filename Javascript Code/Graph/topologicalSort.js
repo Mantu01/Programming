@@ -14,6 +14,8 @@
     Auxiliary Space: O(V)
 */
 
+// Using DFS algorithm
+
 class Solution {
   topologicalSort(adj) {
     let V=adj.length;
@@ -36,5 +38,39 @@ class Solution {
 
     return st.reverse();
 
+  }
+}
+
+// Using BFS algorithm
+
+class Solution {
+  topologicalSort(adj) {
+    let V=adj.length;
+    let inDegree=Array(V).fill(0);
+    let q=[];
+    let topo=[];
+    let head=0,tail=0;
+    for(let i=0;i<V;i++){
+      for(let neighbor of adj[i])
+        inDegree[neighbor]++;
+    }
+    for(let i=0;i<V;i++){
+      if(inDegree[i]===0){
+        q.push(i);
+        tail++;
+      }
+    }
+    while(head<tail){
+      let temp=q[head++];
+      topo.push(temp);
+      for(let it of adj[temp]){
+        inDegree[it]--;
+        if(inDegree[it]===0){
+          q.push(it);
+          tail++;
+        }
+      }
+    }
+    return topo;
   }
 }
